@@ -1,4 +1,5 @@
 const logo = document.getElementById("logo");
+
 const aboutMeNav = document.getElementById("about-me-nav");
 const projectsNav = document.getElementById("projects-nav");
 const skillsNav = document.getElementById("skills-nav");

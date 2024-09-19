@@ -7,7 +7,7 @@
 }
 
 body {
-  background:var(--color2);
+  background: var(--color2);
   color: var(--color4);
   font-family: 'Playfair Display', serif;
   margin: 0 auto;
