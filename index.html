@@ -1,3 +1,4 @@
+<!--My portfolio-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,39 +9,85 @@
     <script src="app.js" defer></script> 
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <script src="https://kit.fontawesome.com/72638e3996.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Protest+Guerrilla&display=swap" rel="stylesheet">
 </head>
 <body>
+  <!--Structured this way to build a business card type style-->
   <section id="card-outline">
   <header>
-    <span id="logo">
-      <img src = "images/logo (2).png" alt="logo"></img>
+    <span>
+      <a id="logo" href=""><img src = "images/logo (2).png" alt="logo"></img></a>
     </span>
+    <nav id="navbar">
+      <a id="about-me-nav" href="#about-me">About Me</a>
+      <a id="projects-nav" href="#projects">Projects</a>
+      <a id="skills-nav" href="#skills">Skills</a>
+    </nav>
+  </header>
+  <main>
+    <!--welcome section shown right when website is loaded-->
+    <div id="welcome-section">
+      <h1>My name is Mishka Moodley</h1>
+      <p>Welcome to my portfolio</p>
+    </div>
+    <!--Shown right after welcome-section and is the main page-->
+    <div id="front-page">
+      <h1>Mishka Moodley</h1>
+      <h2>Web Developer</h2>
+      <p>Building sleek, intuitive websites that will set you apart</p>
+      <button id="learn-more-btn">Learn More</button>
+      <button id="projects-btn">Explore projects</button>
+     <button id="skills-btn">See Skills</button>
+    </div>
+    <!--More information to get to know me -->
+    <div id="about-me">
+      <h1> A little bit about me</h1>
+      <p>In 2020, I graduated with a degree in Industrial Engineering and minors in Business Administration and Computer Science. I transitioned to web development in 2023, earning certifications from freeCodeCamp through self-study and hands-on projects. My portfolio highlights my skills in creating sleek, user-friendly websites. I’m passionate about designing intuitive web applications that deliver exceptional user experiences and excel in both team collaboration and freelance work.</p>
+    </div>
+    <!--Project websites-->
+    <div id="projects">
+      <h1>Projects</h1>
+      <div class="project-tile">
+       <a id="project-one" href="https://xenomin.com/" target="_blank"><h2>Xenomin</h2></a>
+        <a id="project-two" href="https://mishkam12.github.io/TicTacToe/" target="_blank"><h2>TicTacToe</h2></a>
+       <a id="project-three" href="https://mishkam12.github.io/pokemon-search-app/" target="_blank"><h2>Pokemon App</h2></a>
+      </div>
+    </div>
+    <div id ="skills">
+      <!--Tools and Languages-->
+      <h1>Skills</h1>
+      <p>
+   <img src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5">
+   <img src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3">
+   <img src="https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white" alt="SASS">
+   <img src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E" alt="JavaScript">
+   <img src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript">
+   <img src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB" alt="React">
+   <img src="https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white" alt="NodeJS">
+   <img src="https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB" alt="Express.js">
+   <img src="https://img.shields.io/badge/mongodb-%2347A248.svg?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB">
+   <img src="https://img.shields.io/badge/sql-%23000000.svg?style=for-the-badge&logo=sql&logoColor=white" alt="SQL">
+   <img src="https://img.shields.io/badge/REST%20API-%23007ACC.svg?style=for-the-badge" alt="REST API">
+   <img src="https://img.shields.io/badge/json-%23323330.svg?style=for-the-badge&logo=json&logoColor=white" alt="JSON">
+   <img src="https://img.shields.io/badge/sqlite-%23003B57.svg?style=for-the-badge&logo=sqlite&logoColor=white" alt="SQLite">
+   <img src="https://img.shields.io/badge/python-%2314354C.svg?style=for-the-badge&logo=python&logoColor=white" alt="Python">
+   <img src="https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white" alt="Git">
+   <img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
+   <img src="https://img.shields.io/badge/netlify-%23000000.svg?style=for-the-badge&logo=netlify&logoColor=#00C7B7" alt="Netlify">
+   <img src="https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white" alt="AWS">
+   <img src="https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white" alt="Figma">
+   <img src="https://img.shields.io/badge/adobe%20xd-%23FF61F6.svg?style=for-the-badge&logo=adobe-xd&logoColor=white" alt="Adobe XD">
+   <img src="https://img.shields.io/badge/Canva-%2300C4CC.svg?style=for-the-badge&logo=Canva&logoColor=white" alt="Canva">
+
+      </p>
+    </div>
     <div id="contact-info">
       <a id="profile-link" href="https://github.com/mishkam12" target="_blank"><i class="fa-brands fa-github"></i></a>
       <a id="profile-link" href="https://www.linkedin.com/in/mishkamoodley" target="_blank"><i class="fab fa-linkedin"></i></a>
       <a id="profile-link" href="mailto:mishkammoodley@outlook.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
    </div>
-  </header>
-  <main>
-    <div id="welcome-section">
-      <h1>My name is Mishka Moodley</h1>
-      <p>Welcome to my portfolio</p>
-    </div>
-    <div id="about-me">
-      <h1>My name is Mishka Moodley</h1>
-      <p>I am dedicated Software Engineer that focuses on creating captivating web experiences that leave a lasting impact. Beyond technical expertise, I am passionate about designing user-friendly web applications. Whether you are looking for a skilled professional for freelance or web development projects, please get in touch and we discuss how I can contribute to your vision.</p>
-     <button id="projects-btn">Explore projects</button>
-    </div>
-    <div id="projects">
-      <h1 class="project-title">Projects</h1>
-      <div class="project-tile">
-       <a id="project-one" href="https://xenomin.com/" target="_blank"><h2>Xenomin</h2></a>
-        <a id="project-two" href="https://mishkam12.github.io/TicTacToe/" target="_blank"><h2>TicTacToe</h2></a>
-       <a id="project-three" href="https://mishkam12.github.io/pokemon-search-app/" target="_blank"><h2>Pokemon Search App</h2></a>
-      </div>
-      <p>Explore my projects by clicking on the pictures</p>
-    </div>
-    
   </main>
 </section>
 </body>
