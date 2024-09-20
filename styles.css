@@ -2,8 +2,8 @@
   --color1:rgb(20, 20, 20);
   --color2: rgb(0, 0, 0);
   --color3:rgb(70, 65, 65);
-  --color4: rgb(225, 255, 245);
-  --color5: rgb(255, 255, 255);
+  --color4: rgb(235, 255, 245);
+  --color5: rgb(200, 255, 225);
 }
 
 body {
@@ -72,19 +72,24 @@ nav a:hover {
   margin: 1rem;
 }
 
-h1{
+h1 {
   font-family: "Protest Guerrilla", sans-serif;
   font-size: 3rem;
   font-weight: normal;
   margin: 0 auto;
+  animation: fadeIn 1.5s ease-in;
  }
 
 #front-page h2 {
   font-size: 1.5rem;
   margin: 0 auto;
   padding: .5rem;
+  animation: fadeIn 2.5s ease-in;
 }
 
+#front-page p {
+  animation: fadeIn 3s ease-in;
+}
 
 #front-page button {
   text-decoration: none;
@@ -96,11 +101,12 @@ h1{
   border-radius: 4px;
   margin: 1.25rem .75rem;
   padding: .5rem;
+  animation: fadeIn 3s ease-in;
 }
 
 #front-page button:hover{
- background-color: var(--color4);
- color: var(--color3);
+ color: var(--color5);
+ cursor: pointer;
 }
 
 #about-me {
@@ -108,8 +114,13 @@ h1{
   margin: 1rem;
 }
 
+#about-me p {
+  animation: fadeIn 2s ease-in;
+}
+
 #projects {
   display: none;
+  margin: 1rem;
   height: 100%;
 }
 
@@ -121,11 +132,12 @@ h1{
 .project-tile a {
 margin: .5rem auto;
 padding: .5rem;
-height: 12rem;
+height: 11rem;
 text-decoration: none;
 text-align: center;
 color: var(--color4);
 border: 1px solid black;
+animation: fadeIn 2s ease-in;
 }
 
 .project-tile a:hover {
@@ -164,6 +176,10 @@ filter: grayscale(100%);
   align-items: center;
 }
 
+#project-three h2:hover{
+  padding: 2.5rem;
+}
+
 #skills {
   display: none;
   margin: 1rem;
@@ -172,6 +188,7 @@ filter: grayscale(100%);
 #skills img{
   height: 2rem;
   margin: .1rem;
+  animation: fadeIn 2s ease-in;
 }
 
 #contact-info a {
@@ -183,6 +200,11 @@ filter: grayscale(100%);
 
 #contact-info a:hover {
   color: var(--color5);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
 @media (max-width:54rem){
