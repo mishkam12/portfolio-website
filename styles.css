@@ -1,4 +1,7 @@
+/*Add styles to website to ensure a clean modern look across devices*/
+
 :root {
+  /*Color Palette*/
   --color1:rgb(20, 20, 20);
   --color2: rgb(0, 0, 0);
   --color3:rgb(70, 65, 65);
@@ -9,6 +12,7 @@
 body {
   background: var(--color2);
   color: var(--color4);
+  font-size: 1.25rem;
   font-family: 'Playfair Display', serif;
   margin: 0 auto;
   padding: 0;
@@ -20,6 +24,7 @@ main {
 }
 
 #card-outline {
+  /*Card styles, creating a similar style to a business card*/
   width: 50rem;
   height: 25rem;
   font-size: 1.25rem;
@@ -27,7 +32,7 @@ main {
   box-shadow: 6px 8px 8px var(--color3);
   border-radius: .5rem;
   text-align: center;
-  padding:  0;
+  padding: 0;
   margin: 0 auto;
   position: relative;
   top: 12rem;
@@ -48,19 +53,38 @@ header {
 }
 
 #logo img:hover {
-  background-color: var(--color4);
+  transform: rotate(335deg);
 }
 
 nav a {
+  position: relative;
   margin: 1rem;
   text-decoration: none;
   font-size: 1.25rem;
-  color: var(--color4);
+  font-weight: bold;
+  color: var(--color5);
   padding: .5rem;
 }
 
 nav a:hover {
-  color: var(--color5);
+  color: var(--color4);
+}
+
+nav a::after {
+  /*Underline effect*/
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 4px;
+  background-color: var(--color5);
+  transition: width 0.5s ease;
+}
+
+nav a:hover::after {
+  /*Underline effect on hover*/
+  width: 100%;
 }
 
 #welcome-section {
@@ -77,18 +101,18 @@ h1 {
   font-size: 3rem;
   font-weight: normal;
   margin: 0 auto;
-  animation: fadeIn 1.5s ease-in;
+  animation: fadeInAndUp 1.5s ease-in;
  }
 
 #front-page h2 {
   font-size: 1.5rem;
   margin: 0 auto;
   padding: .5rem;
-  animation: fadeIn 2.5s ease-in;
+  animation: fadeInAndUp 2s ease-in;
 }
 
 #front-page p {
-  animation: fadeIn 3s ease-in;
+  animation: fadeInAndUp 2s ease-in;
 }
 
 #front-page button {
@@ -96,17 +120,21 @@ h1 {
   font-weight: bold;
   font-size: 1.5rem;
   font-family: 'Playfair Display', serif;
-  background-color: var(--color3);
+  border: 4px solid var(--color3);
   color: var(--color4);
+  background-color: var(--color1);
   border-radius: 4px;
   margin: 1.25rem .75rem;
   padding: .5rem;
-  animation: fadeIn 3s ease-in;
+  animation: growAndShrink 2s ease-in;
 }
 
 #front-page button:hover{
- color: var(--color5);
- cursor: pointer;
+  background-color: var(--color5);
+  transition: background-color 1.5s ease-in;
+  color: var(--color2);
+  border: 4px solid var(--color2);
+  cursor: pointer;
 }
 
 #about-me {
@@ -115,7 +143,7 @@ h1 {
 }
 
 #about-me p {
-  animation: fadeIn 2s ease-in;
+  animation: fadeInAndUp 2s ease-in;
 }
 
 #projects {
@@ -125,36 +153,39 @@ h1 {
 }
 
 .project-tile {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(4rem, 1fr));
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
 }
 
 .project-tile a {
-margin: .5rem auto;
-padding: .5rem;
-height: 11rem;
-text-decoration: none;
-text-align: center;
-color: var(--color4);
-border: 1px solid black;
-animation: fadeIn 2s ease-in;
+  margin: .5rem auto;
+  padding: .5rem;
+  height: 11rem;
+  text-decoration: none;
+  text-align: center;
+  color: var(--color4);
+  border: 1px solid black;
+  animation: fadeInAndUp 2s ease-in;
 }
 
 .project-tile a:hover {
-filter: grayscale(100%);
+  filter: grayscale(100%);
 }
 
 .project-tile h2 {
   color: transparent;
 }
 
-.project-tile  h2:hover {
-  background-color:rgba(0,0,0,0.8);
+.project-tile h2:hover {
+  background-color: rgba(0,0,0,0.8);
   color: var(--color4);
   font-size: 1.5rem;
   text-align: center;
   padding: 3.5rem 3rem;
 }
+
+/*Added snapshots of projects to each project link*/
 
 #project-one {
   background: url(images/Xenomin.png);
@@ -166,14 +197,12 @@ filter: grayscale(100%);
   background: url(images/tic-tac-toe-website-screenshot.png);
   background-size: cover;
   width: 80%;
-  text-align: center;
 }
 
 #project-three {
   background: url(images/pokemon-website-screenshot.png);
   background-size: cover;
   width: 80%;
-  align-items: center;
 }
 
 #project-three h2:hover{
@@ -188,7 +217,14 @@ filter: grayscale(100%);
 #skills img{
   height: 2rem;
   margin: .1rem;
-  animation: fadeIn 2s ease-in;
+  animation: fadeInAndUp 2s ease-in;
+}
+
+#contact-info {
+  position: absolute;
+  bottom: 1rem;
+  width: 100%;
+  animation: growAndShrink 2s ease-in;
 }
 
 #contact-info a {
@@ -200,16 +236,38 @@ filter: grayscale(100%);
 
 #contact-info a:hover {
   color: var(--color5);
+  font-size: 2rem;
 }
 
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+/*Text Animations*/
+
+@keyframes fadeInAndUp {
+  from { transform: translateY(100%);
+    opacity: 0; }
+  to { transform: translateY(0);
+    opacity: 1; }
 }
+
+@keyframes growAndShrink {
+  from { scale: 120%;
+  color: var(--color3);}
+  to { scale: 100%;
+  color: var(--color4);}
+}
+
+/*Responsive styles*/
 
 @media (max-width:54rem){
   #card-outline {
     width: 80%;
+  }
+
+  .project-tile a {
+    height: auto;
+  }
+
+  #project-one, #project-two, #project-three {
+    background-size: 100%;
   }
 }
 
@@ -222,11 +280,39 @@ filter: grayscale(100%);
       height: 2rem;
     }
 
-    #front-page button {
-      font-size: 1rem;
+    nav a {
+      font-size: .75rem;
+      padding: .25rem;
     }
 
-    #about-me, #contact-info a {
-      margin: 0;
+    h1 {
+      font-size: 1.75rem;
+    }
+
+    h2 {
+      font-size: 1.25rem;
+    }
+
+  #front-page button {
+      font-size: 1rem;
+      margin: .75rem .25rem;
+      padding: .25rem;
+  }
+
+  #about-me {
+    font-size: .85rem;
+  }
+
+  .project-tile h2:hover {
+    font-size: 1rem;
+    padding: 2.5rem 2rem;
+  }
+  
+  #skills img {
+    height: 1.4rem;
+  }
+
+  #contact-info a {
+    margin: .25rem;
     }
 }
