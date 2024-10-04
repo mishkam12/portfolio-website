@@ -1,91 +1,139 @@
 <!--My portfolio website: A simple and sleek  portfolio to showcase my skills and projects-->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mishka M. Portfolio</title>
-    <!--Linking files and external links-->
-    <link rel="stylesheet" href="styles.css">
-    <script src="app.js" defer></script> 
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    <script src="https://kit.fontawesome.com/72638e3996.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mishka M. Portfolio</title>
+  <!--Linking files and external links-->
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <script src="https://kit.fontawesome.com/72638e3996.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Protest+Guerrilla&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Protest+Guerrilla&display=swap"
+    rel="stylesheet">
 </head>
+
 <body>
   <!--Section is for a card layout-->
   <section id="card-outline">
-  <header>
-    <span>
-      <a id="logo" href=""><img src = "images/logo (2).png" alt="logo"></img></a>
-    </span>
-    <nav id="navbar">
-      <a id="about-me-nav" href="#about-me">About Me</a>
-      <a id="projects-nav" href="#projects">Projects</a>
-      <a id="skills-nav" href="#skills">Skills</a>
-    </nav>
-  </header>
-  <main>
-    <!--Front page: Introduces who I am and what I do-->
-    <div id="front-page">
-      <h1>Mishka Moodley</h1>
-      <h2>Web Developer</h2>
-      <p>Creating sleek, user-friendly websites that will set your business apart.</p>
-      <!--Buttons for further navigation-->
-      <button id="learn-more-btn">Learn More</button>
-      <button id="projects-btn">Explore projects</button>
-     <button id="skills-btn">Skill set</button>
-    </div>
-    <!--About me section: Provides background information -->
-    <div id="about-me">
-      <h1> A little bit about me</h1>
-      <p>In 2020, I graduated with a degree in Industrial Engineering and minors in Business Administration and Computer Science. I transitioned to web development in 2023, earning certifications from freeCodeCamp through self-study and hands-on projects. My portfolio highlights my skills in creating sleek, user-friendly websites. I’m passionate about designing intuitive web applications that deliver exceptional user experiences and excel in both team collaboration and freelance work.</p>
-    </div>
-    <!--Projects: project links to live websites-->
-    <div id="projects">
-      <h1>Projects</h1>
-      <div class="project-tile">
-       <a id="project-one" href="https://xenomin.com/" target="_blank"><h2>Xenomin</h2></a>
-        <a id="project-two" href="https://mishkam12.github.io/TicTacToe/" target="_blank"><h2>TicTacToe</h2></a>
-       <a id="project-three" href="https://mishkam12.github.io/pokemon-search-app/" target="_blank"><h2>Pokemon App</h2></a>
+    <header>
+      <span>
+        <a id="logo" href=""><img src="images/logo (2).png" alt="logo"></img></a>
+      </span>
+      <nav id="navbar">
+        <a id="about-me-nav" href="#about-me">About Me</a>
+        <a id="projects-nav" href="#projects">Projects</a>
+        <a id="skills-nav" href="#skills">Skills</a>
+      </nav>
+    </header>
+    <main>
+      <!--Front page: Introduces who I am and what I do-->
+      <div id="front-page">
+        <h1>Mishka Moodley</h1>
+        <h2>Web Developer</h2>
+        <p>Creating sleek, user-friendly websites that will set your business apart.</p>
+        <!--Buttons for further navigation-->
+        <button id="learn-more-btn">Learn More</button>
+        <button id="projects-btn">Explore projects</button>
+        <button id="skills-btn">Skill set</button>
       </div>
-    </div>
-    <div id ="skills">
-      <!--Skill set: highlights relvant skills using badges for tools and languages-->
-      <h1>Skill set</h1>
-      <p>
-   <img src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5">
-   <img src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3">
-   <img src="https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white" alt="SASS">
-   <img src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E" alt="JavaScript">
-   <img src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript">
-   <img src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB" alt="React">
-   <img src="https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white" alt="NodeJS">
-   <img src="https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB" alt="Express.js">
-   <img src="https://img.shields.io/badge/mongodb-%2347A248.svg?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB">
-   <img src="https://img.shields.io/badge/sql-%23000000.svg?style=for-the-badge&logo=sql&logoColor=white" alt="SQL">
-   <img src="https://img.shields.io/badge/REST%20API-%23007ACC.svg?style=for-the-badge" alt="REST API">
-   <img src="https://img.shields.io/badge/json-%23323330.svg?style=for-the-badge&logo=json&logoColor=white" alt="JSON">
-   <img src="https://img.shields.io/badge/sqlite-%23003B57.svg?style=for-the-badge&logo=sqlite&logoColor=white" alt="SQLite">
-   <img src="https://img.shields.io/badge/python-%2314354C.svg?style=for-the-badge&logo=python&logoColor=white" alt="Python">
-   <img src="https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white" alt="Git">
-   <img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
-   <img src="https://img.shields.io/badge/netlify-%23000000.svg?style=for-the-badge&logo=netlify&logoColor=#00C7B7" alt="Netlify">
-   <img src="https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white" alt="AWS">
-   <img src="https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white" alt="Figma">
-   <img src="https://img.shields.io/badge/adobe%20xd-%23FF61F6.svg?style=for-the-badge&logo=adobe-xd&logoColor=white" alt="Adobe XD">
-   <img src="https://img.shields.io/badge/Canva-%2300C4CC.svg?style=for-the-badge&logo=Canva&logoColor=white" alt="Canva">
-      </p>
-    </div>
-  </main>
-  <!--Footer providing contact info and social media links-->
-  <footer id="contact-info">
-    <a id="profile-link" href="https://github.com/mishkam12" target="_blank"><i class="fa-brands fa-github"></i></a>
-    <a id="profile-link" href="https://www.linkedin.com/in/mishkamoodley" target="_blank"><i class="fab fa-linkedin"></i></a>
-    <a id="profile-link" href="mailto:mishkammoodley@outlook.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
-  </footer>
-</section>
+      <!--About me section: Provides background information -->
+      <div id="about-me">
+        <h1> A little bit about me</h1>
+        <p>
+          Hello, I'm Mishka Moodley, a web developer with a Bachelor's in Industrial Engineering and a minor in Computer
+          Science.
+          I specialize in HTML, CSS, JavaScript, and front-end frameworks, with experience building dynamic,
+          user-friendly applications.
+          My journey into web development combines hands-on projects and self-study, focusing on creating seamless user
+          experiences.
+        </p>
+        <p>
+          Check out my projects or reach out if you'd like to collaborate. Let's create something amazing together!
+        </p>
+      </div>
+      <!--Projects: project links to live websites-->
+      <div id="projects">
+        <h1>Projects</h1>
+        <div class="project-tiles">
+          <a id="project-one" href="https://xenomin.com/" target="_blank">
+            <p>Xenomin</p>
+          </a>
+          <a id="project-two" href="https://mishkam12.github.io/TicTacToe/" target="_blank">
+            <p>TicTacToe</p>
+          </a>
+          <a id="project-three" href="https://mishkam12.github.io/pokemon-search-app/" target="_blank">
+            <p>Pokemon App</p>
+          </a>
+        </div>
+      </div>
+      <div id="skills">
+        <!--Skill set: highlights relvant skills using badges for tools and languages-->
+        <h1>Skill set</h1>
+        <p>
+          <img src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white"
+            alt="HTML5">
+          <img src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white"
+            alt="CSS3">
+          <img src="https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white"
+            alt="SASS">
+          <img
+            src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"
+            alt="JavaScript">
+          <img
+            src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white"
+            alt="TypeScript">
+          <img src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB"
+            alt="React">
+          <img src="https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white"
+            alt="NodeJS">
+          <img
+            src="https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB"
+            alt="Express.js">
+          <img src="https://img.shields.io/badge/mongodb-%2347A248.svg?style=for-the-badge&logo=mongodb&logoColor=white"
+            alt="MongoDB">
+          <img src="https://img.shields.io/badge/sql-%23000000.svg?style=for-the-badge&logo=sql&logoColor=white"
+            alt="SQL">
+          <img src="https://img.shields.io/badge/REST%20API-%23007ACC.svg?style=for-the-badge" alt="REST API">
+          <img src="https://img.shields.io/badge/json-%23323330.svg?style=for-the-badge&logo=json&logoColor=white"
+            alt="JSON">
+          <img src="https://img.shields.io/badge/sqlite-%23003B57.svg?style=for-the-badge&logo=sqlite&logoColor=white"
+            alt="SQLite">
+          <img src="https://img.shields.io/badge/python-%2314354C.svg?style=for-the-badge&logo=python&logoColor=white"
+            alt="Python">
+          <img src="https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white"
+            alt="Git">
+          <img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white"
+            alt="GitHub">
+          <img
+            src="https://img.shields.io/badge/netlify-%23000000.svg?style=for-the-badge&logo=netlify&logoColor=#00C7B7"
+            alt="Netlify">
+          <img src="https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white"
+            alt="AWS">
+          <img src="https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white"
+            alt="Figma">
+          <img
+            src="https://img.shields.io/badge/adobe%20xd-%23FF61F6.svg?style=for-the-badge&logo=adobe-xd&logoColor=white"
+            alt="Adobe XD">
+          <img src="https://img.shields.io/badge/Canva-%2300C4CC.svg?style=for-the-badge&logo=Canva&logoColor=white"
+            alt="Canva">
+        </p>
+      </div>
+    </main>
+    <!--Footer providing contact info and social media links-->
+    <footer id="contact-info">
+      <a id="profile-link" href="https://github.com/mishkam12" target="_blank"><i class="fa-brands fa-github"></i></a>
+      <a id="profile-link" href="https://www.linkedin.com/in/mishkamoodley" target="_blank"><i
+          class="fab fa-linkedin"></i></a>
+      <a id="profile-link" href="mailto:mishkammoodley@outlook.com" target="_blank"><i
+          class="fa-solid fa-envelope"></i></a>
+    </footer>
+  </section>
 </body>
+
 </html>
