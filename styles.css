@@ -151,16 +151,17 @@ h1 {
   display: none;
   margin: 1rem;
   height: 100%;
-  transform:scale(.75);
 }
 
 .project-tiles {
+  position: relative;
   margin-top: 1rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
 }
 
 .project-tiles a {
+  position: relative; 
   margin: .5rem auto;
   padding: .5rem;
   height: 11rem;
@@ -168,6 +169,7 @@ h1 {
   text-align: center;
   color: var(--color4);
   border: 1px solid black;
+  overflow: hidden;
   animation: fadeInAndUp 2s ease-in;
 }
 
@@ -175,16 +177,19 @@ h1 {
   filter: grayscale(100%);
 }
 
-.project-tiles p {
-  color: transparent;
-}
-
-.project-tiles p:hover {
-  background-color: rgba(0,0,0,0.8);
-  color: var(--color4);
-  font-size: 1.5rem;
+.project-tiles h2 {
+  position: absolute;
+  top: 0; 
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 0.5rem;
+  background-color: rgba(0, 0, 0, 0.9); 
+  color: var(--color4); 
+  font-size: 1.25rem;
+  font-weight: bold;
   text-align: center;
-  padding: 3.5rem 3rem;
+  z-index: 2; 
 }
 
 /*Added snapshots of projects to each project link*/
@@ -207,8 +212,26 @@ h1 {
   width: 80%;
 }
 
-#project-three p:hover{
-  padding: 2.5rem;
+#project-one .project-description{
+  bottom: .5rem;
+}
+
+.project-description {
+  position: absolute;
+  opacity: 0;
+  bottom: 1rem;
+  left: 0;
+  right: 0;
+  color: var(--color4);
+  background-color: rgba(0,0,0,0.8);
+  font-size: 0.75rem;
+  margin-top: 0.5rem;
+  z-index: 1;
+  transition: opacity 0.3s ease-in;
+}
+
+.project-tiles a:hover .project-description {
+  opacity: 1;
 }
 
 #skills {
@@ -301,17 +324,23 @@ h1 {
       padding: .25rem;
   }
 
-  #about-me {
+  #about-me p{
     font-size: .85rem;
   }
 
   .project-tiles a {
     height: 6rem;  
+    padding: 0.25rem;
   }
 
-  .project-tiles p:hover {
+  .project-tiles h2 {
     font-size: 1rem;
-    padding: 2rem 1rem;
+    padding: 0.25rem;
+  }
+
+  .product-description{
+    font-size: .6rem;
+    bottom: 0.5rem;
   }
   
   #skills img {
