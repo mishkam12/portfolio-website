@@ -217,7 +217,7 @@ h1 {
 }
 
 .project-description {
-  position: absolute;
+  position: absolute; 
   opacity: 0;
   bottom: 1rem;
   left: 0;
